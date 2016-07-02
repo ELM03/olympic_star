@@ -1,0 +1,2 @@
+WSGIScriptReloading On
+
