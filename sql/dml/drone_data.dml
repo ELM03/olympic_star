@@ -1,0 +1,5 @@
+insert into drones(drone_id,longtitude,latitude) values (0,'35.681298','139.766247');
+insert into drones(drone_id,longtitude,latitude) values (1,'35.711208','139.773542');
+insert into drones(drone_id,longtitude,latitude) values (2,'35.72888','139.710348');
+insert into drones(drone_id,longtitude,latitude) values (3,'35.737841','139.653912');
+insert into drones(drone_id,longtitude,latitude) values (4,'35.6581','139.701742');

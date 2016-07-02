@@ -10,8 +10,7 @@ app = Flask(__name__)
 # Try adding the user list
 
 callers = {
-  "+818041324020":"Yoshiki Kanda", 
-  "+12513336613":"Tetsuya 2"
+  "+1(251)3336613":"Tetsuya"
 }
 
 # Find these values at https://twilio.com/user/account
@@ -35,7 +34,12 @@ def hello_monkey():
   account_sid = "AC3812d37fd9f78cf4f9fcf8327c13eb96"
   auth_token = "8eed43c4a82bcca4d8575b81eae96af2"
   client = TwilioRestClient(account_sid, auth_token)
-  message = client.messages.create(to="+819087101147", from_="+12513335896", body = "OK"+":"+str(from_body))
+
+  # Get the geographic info. of Drone
+  
+
+
+  message = client.messages.create(to="+819087101147", from_="+12513335896", body = "Drone is coming in 5 min.")
   return str(resp)
 
 
