@@ -29,11 +29,11 @@ SMSクライアントからのSMS送信
 
 
 ### オープンソースライブラリ一覧 #####
-Server Side
+Server Side:
   Flask
   Twilio
 
-Client Side
+Client Side:
   Google Map API
   Twilio
 
