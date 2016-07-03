@@ -11,6 +11,11 @@ curl -kL https://raw.github.com/pypa/pip/master/contrib/get-pip.py | python
 apt-get install apache2
 apt-get install libapache2-mod-wsgi
 
+sudo apt-get install python-pip
+sudo pip install MySQL-python
+sudo apt-get install python-dev
+sudo apt-get install libmysqlclient-dev
+
 ##### Android #####
 下記にアクセスしてQRコードを読み取り
 http://47.88.192.79/QRcode.gif
@@ -19,6 +24,7 @@ http://47.88.192.79/QRcode.gif
 http://47.88.192.79/olympic_star.apk
 にアクセスして、ダウンロード後に
 adb install olympic_star.apk
+
 
 ### アプリのテスト方法 #####
 
