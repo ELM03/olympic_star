@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'lato';
+    src: url('../font/lato.otf');
+}
+
+body {
+  /*background-color: #EAECC6;*/
+  /*background-color: #45B3CB;*/
+  background-color: white;
+  width: 100%;
+  margin: 0 auto;
+  font-family: lato;
+}
+
+/*header*/
+
+header {
+ background-color: #ecf0f1;
+ opacity: 0.95;
+ box-shadow: 0 3px 5px rgba(148, 135, 115, 0.2);
+ height: 55px;
+ width: 100%;
+ position: fixed;
+ z-index: 1;
+ display: table;
+ font-size: 16px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.login {
+  float: right;
+  line-height: 55px;
+  margin-right: 20px;
+  /*background-color: red;*/
+}
+
+.google-map {
+  /*background-color: #34495e;*/
+  float: left;
+  width: 48%;
+  height: 600px;
+  margin-top: 120px;
+}
+
+.rigiht-things {
+  /*background-color: #95a5a6;*/
+  float: right;
+  width: 48%;
+  height: 600px;
+  margin-top: 120px;
+  
+}
+
+#drones {
+  background-color: #ecf0f1;
+  width: 100%;
+  text-align: center;
+  line-height: 30px;
+  color: #3f3f3f;
+}
+
+#drones td {
+  width: 33%;
+}
+
+.drone-cosole {
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 300px;
+  margin-top: 50px;
+  border: 1px white solid;
+}

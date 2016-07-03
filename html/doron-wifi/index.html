@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dorone wifi</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <script type=text/javascript>
+       
+      onload = function() {
+        var console = document.getElementById('droneConsole');
+        var id_4 = document.getElementById('id4_1');
+        var id_5 = document.getElementById('id4_2');
+
+        console.innerHTML = "<span style='color:#fff'> Welcome to Drone Admin. Screen.</span><br><br>"
+        setTimeout(function(){console.innerHTML =  console.innerHTML+"<span style='color:#fff'>Now the Drone No.4 has been sent to     a customer, will be sent in 15 seconds.'</span><br><br>"},100);
+        
+        setTimeout(function(){console.innerHTML =  console.innerHTML+"<span style='color:#fff'>Location of Drone No.4 has updated 35.8932,139.7932</span><br><br>"},1000);
+        setTimeout(function(){console.innerHTML =  console.innerHTML+"<span style='color:#fff'>Location of Drone No.4 has updated 35.9143,139.7999</span><br><br>"},2000);
+        setTimeout(function(){console.innerHTML =  console.innerHTML+"<span style='color:#fff'>Location of Drone No.4 has updated 35 35.9392,139.8912</span><br><br>"},3000);
+   
+        setTimeout(function(){console.innerHTML = console.innerHTML + "<span style='color:#fff'>Now the Drone has got arrived at the location of a customer'</span><br>"},4000);
+
+
+        setTimeout(function(){id_4.innerText = "35.8932"},1000);
+        setTimeout(function(){id_5.innerText = "139.7932"},1000);
+
+        setTimeout(function(){id_4.innerText = "35.9143"},2000);
+        setTimeout(function(){id_5.innerText = "139.7999"},2000);
+
+        setTimeout(function(){id_4.innerText = "35.9392"},3000);
+        setTimeout(function(){id_5.innerText = "139.8912"},3000);
+      };
+
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="login"></div>
+    </header>
+    <div class="container">
+    <div class="google-map">
+      <iframe src="https://www.google.com/maps/d/embed?mid=1COaDLyH08xNvqNq0mMAUrm-RzXM" width="100%" height="500px"></iframe>
+    </div>
+    <div class="rigiht-things">
+      <div class="tables">
+        <table id="drones" rules="none">
+          <tr style="background-color:#45B3CB; color: white; font-weight: bold; line-height: 40px; border-bottom: 1px gray solid;">
+            <td>ID</td>
+            <td>latitude</td>
+            <td>longitude</td>
+          </tr>
+          <tr>
+            <td>0</td>
+            <td>35.681298</td>
+            <td>139.766247</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>35.711208</td>
+            <td>139.773542</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>35.72888</td>
+            <td>139.710348</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>35.711208</td>
+            <td>139.773542</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td id="id4_1">35.6581</td>
+            <td id="id4_2">139.701742</td>
+          </tr>
+        </table>
+      </div>
+      <div id="droneConsole" class="drone-cosole"></div>
+    </div>
+    </div>
+  </body>
+
+
+</html>
