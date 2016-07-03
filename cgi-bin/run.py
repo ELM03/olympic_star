@@ -26,6 +26,10 @@ def responseSms():
 
   # Get the geographic info. of Drone
   l = str(from_body).split(",")
+
+  print "[SMS] Customer required Drone-WIFI Delivery request from Meguro Station ("+ l[0] + "," + l[1] + ")" 
+
+
   connector = MySQLdb.connect(host="localhost",db="db1",user="yoshiki",charset="utf8")
   cursor = connector.cursor()
   
@@ -36,7 +40,6 @@ def responseSms():
   #Calculate the distance from the current location and the nearest drone
   for record in records:
     distance.append(math.sqrt( math.pow(float(l[0]) - record[1], 2) + math.pow(float(l[1]) - record[2],2)))
-    print distance[i]
     i = i + 1
 
   min_dist = distance[0]  
@@ -54,7 +57,7 @@ def responseSms():
   connector.close()
 
   #Print the nearest drone's number 
-  print k 
+  print "[Process]ID:"+str(k)+" drone is selected by SMS server" 
 
   
   # Get the Access key and Authentication token
@@ -64,9 +67,9 @@ def responseSms():
 
   # Send message with the nearest drone's information 
   message = client.messages.create(to="+819087101147", from_="+12513335896", body = "Drone is coming in 15 sec. Drone ID:"+str(k))
-  time.sleep(15)
+  time.sleep(20)
 
-  print "15 sec. has finished"
+  print "20 sec. has finished"
   message = client.messages.create(to="+819087101147", from_="+12513335896", body = "Drone got arrived. Drone ID:"+str(k))
 
   
